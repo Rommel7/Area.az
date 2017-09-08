@@ -303,7 +303,7 @@ html {
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: GoodPro-Italic;
     font-size: 13px;
     line-height: 1.42857143;
     color: #828282
@@ -2011,15 +2011,15 @@ output {
 
 .form-control::-moz-placeholder {
     color: #999;
-    opacity: 1
+    opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-    color: #999
+    color: #999;
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #999
+    color: #999;
 }
 
 .has-success .checkbox,
@@ -4377,7 +4377,7 @@ button.list-group-item-danger.active:hover {
     position: absolute;
     z-index: 1070;
     display: block;
-    font-family: Roboto, sans-serif;
+    font-family: GoodPro-Italic, sans-serif;
     font-weight: 400;
     letter-spacing: normal;
     line-break: auto;
@@ -8960,6 +8960,8 @@ a.mdc-text-black-darker:hover {
     color: #000
 }
 
+
+/*
 @font-face {
     font-family: Roboto;
     src: url(../fonts/Roboto/Roboto-Light-webfont.eot);
@@ -8990,6 +8992,29 @@ a.mdc-text-black-darker:hover {
     src: url(../fonts/Roboto/Roboto-Bold-webfont.eot@) format('embedded-opentype'), url(../fonts/Roboto/Roboto-Bold-webfont.woff) format('woff'), url(../fonts/Roboto/Roboto-Bold-webfont.ttf) format('truetype'), url(../fonts/Roboto/Roboto-Bold-webfont.svg) format('svg');
     font-weight: 700;
     font-style: normal
+}
+*/
+
+
+/*Regular = CondBook*/
+
+@font-face {
+    font-family: GoodPro-Regular;
+    src: url(../fonts/GoodPro/GoodPro-CondBook.otf);
+    src: url(../fonts/GoodPro/GoodPro-CondBook.eot) format('embedded-opentype'), url(../fonts/GoodPro/GoodPro-CondBook.woff) format('woff'), url(../fonts/GoodPro/GoodPro-CondBook.ttf) format('truetype'), url(../fonts/GoodPro/GoodPro-CondBook.svg) format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*Regular = CondBookItalic*/
+
+@font-face {
+    font-family: GoodPro-Italic;
+    src: url(../fonts/GoodPro/GoodPro-CondBookItalic.otf);
+    src: url(../fonts/GoodPro/GoodPro-CondBookItalic.eot) format('embedded-opentype'), url(../fonts/GoodPro/GoodPro-CondBookItalic.woff) format('woff'), url(../fonts/GoodPro/GoodPro-CondBookItalic.ttf) format('truetype'), url(../fonts/GoodPro/GoodPro-CondBookItalic.svg) format('svg');
+    font-weight: 400;
+    font-style: normal;
 }
 
 .form-control {
@@ -10533,11 +10558,11 @@ a {
 .card__header h1,
 .card__header h2 {
     margin: 0;
-    font-weight: 400
+    font-weight: 400;
 }
 
 .card__header h2 {
-    font-size: 17px
+    font-size: 25px;
 }
 
 .card__header small {
@@ -10620,11 +10645,11 @@ a {
     box-shadow: 0 0 20px rgba(0, 0, 0, .3);
     background-color: #3F51B5;
     background: url(../img/port-baku_hero.png);
-/*    background-repeat: no-repeat;*/
+    /*    background-repeat: no-repeat;*/
 }
 
 #header #layer {
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 #header.affix {
@@ -10824,6 +10849,7 @@ a {
 }
 
 .navigation {
+    font-family: GoodPro-Regular;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -10844,7 +10870,7 @@ a {
 }
 
 .navigation>li>a:not(.navigation__close) {
-    font-size: 15px
+    font-size: 20px
 }
 
 @media (min-width:992px) {
@@ -10992,7 +11018,7 @@ a {
     display: block;
     color: #3e3e3e;
     font-weight: 500;
-    text-transform: uppercase
+    /*    text-transform: uppercase;*/
 }
 
 .navigation__close {
@@ -11019,21 +11045,20 @@ a {
     left: 0;
     top: 0;
     height: 100%;
-    z-index: 2
+    z-index: 2;
+    width: 20%;
+    background: #f0f0f0;
 }
 
 .search__type>a {
-    background-color: #FFEB3B;
+    background-color: #f0f0f0;
     height: 100%;
     padding: 17px 0 0 19px;
     border-radius: 2px 0 0 2px;
-    -webkit-transition: background-color;
-    -o-transition: background-color;
-    transition: background-color;
-    -webkit-transition-duration: .3s;
-    transition-duration: .3s;
-    width: 72px;
-    font-size: 13px
+    /*    width: 72px;*/
+    font-size: 33px;
+    line-height: 33px;
+    color: #696969;
 }
 
 .search__type.open>a {
@@ -11043,7 +11068,7 @@ a {
 .search__type .dropdown-menu,
 .search__type.open>a,
 .search__type>a:hover {
-    background-color: #FDD835
+    background-color: #f0f0f0;
 }
 
 .search__type .dropdown-menu {
@@ -11083,12 +11108,17 @@ a {
 
 .search__input {
     border: 0;
-    height: 50px;
-    font-size: 14px;
+    height: 63px;
+    font-size: 29px;
     padding: 1px 20px 0;
     background-color: #fff;
     border-radius: 2px;
     width: 100%
+}
+
+.search__input::placeholder {
+    font-size: 29px;
+    line-height: 29px;
 }
 
 .search__input,
@@ -11142,7 +11172,8 @@ a {
 .search__body {
     position: relative;
     padding-left: 70px;
-    overflow: hidden
+    padding-left: 20%;
+    overflow: hidden;
 }
 
 .search__body.toggled {
@@ -11194,24 +11225,24 @@ a {
 }
 
 .search__advanced .form-group--float {
-    margin-top: 24px
+    margin-top: 24px;
 }
 
 .search-backdrop {
-    z-index: 9
+    z-index: 9;
 }
 
 .action-header {
     background-color: #fff;
     padding: 12px 15px;
     box-shadow: 0 3px 5px -2px rgba(0, 0, 0, .1);
-    position: relative
+    position: relative;
 }
 
 .action-header:after,
 .action-header:before {
     content: " ";
-    display: table
+    display: table;
 }
 
 @media (max-width:767px) {
@@ -11385,14 +11416,14 @@ a {
 .listings-grid__body>small {
     color: #9c9c9c;
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 5px;
     font-weight: 500;
     line-height: 16px
 }
 
 .listings-grid__body>h5 {
-    font-size: 13px;
+    font-size: 20px;
     margin: 0 0 5px
 }
 
@@ -11507,6 +11538,7 @@ only screen and (min-resolution:2dppx) {
 }
 
 .listings-grid .listings-grid__price {
+    font-family: GoodPro-Regular;
     bottom: 0;
     left: 0;
     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .5) 100%);
@@ -11946,25 +11978,25 @@ only screen and (min-resolution:2dppx) {
 
 .subscribe .form-control::-moz-placeholder {
     color: #fff;
-    opacity: 1
+    opacity: 1;
 }
 
 .subscribe .form-control:-ms-input-placeholder {
-    color: #fff
+    color: #fff;
 }
 
 .subscribe .form-control::-webkit-input-placeholder {
-    color: #fff
+    color: #fff;
 }
 
 .subscribe .btn--circle {
     box-shadow: none;
-    background-color: #fff
+    background-color: #fff;
 }
 
 .subscribe__icon {
     color: #fff;
-    font-size: 25px
+    font-size: 25px;
 }
 
 .subscribe__icon>i {
@@ -11972,7 +12004,7 @@ only screen and (min-resolution:2dppx) {
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    line-height: 60px
+    line-height: 60px;
 }
 
 .map-widget {
@@ -12709,7 +12741,7 @@ only screen and (min-resolution:2dppx) {
 }
 
 .section__title h2 {
-    font-size: 19px;
+    font-size: 26px;
     color: #676767;
     margin: 0;
     font-weight: 400;
@@ -15714,7 +15746,7 @@ html:not(.ie9) .page-loader__spinner {
 .swal2-modal {
     border-radius: 2px;
     padding: 30px!important;
-    font-family: Roboto, sans-serif;
+    font-family: GoodPro-Regular, sans-serif;
     box-shadow: 0 5px 20px rgba(0, 0, 0, .07)
 }
 
