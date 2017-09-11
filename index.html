@@ -22,11 +22,15 @@
     <!-- Site -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Page Loader JS -->
-    <!--    <script src="js/page-loader.min.js" async></script>-->
+    <script src="js/page-loader.min.js" async></script>
     <!--    <script src='../../../google_analytics_auto.js'></script>-->
 </head>
 
 <body>
+    <!-- Start page loader -->
+    <div id="page-loader">
+        <div class="page-loader__spinner"></div>
+    </div>
     <!-- End page loader -->
     <header id="header">
         <div id="layer">
@@ -58,7 +62,11 @@
                             </div>
                         </div>
 -->
-                        <div class="search__type dropdown"> <a href="index.html" data-toggle="dropdown">Satış * İcarə</a>
+                        <div class="search__type"> <a href="#">Satış<label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                            </label> İcarə</a>
+
                         </div>
                         <div class="search__body">
                             <input type="text" class="search__input" placeholder="Bura yazın.." data-rmd-action="advanced-search-open">
@@ -243,7 +251,8 @@
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card__header card__header--minimal">
-                            <h2>Təzə elanlar - Satış</h2>  </div>
+                            <h2>Təzə elanlar - Satış</h2>
+                        </div>
                         <div class="grid-widget grid-widget--listings">
                             <div class="col-xs-6">
                                 <a class="grid-widget__item" href="listing-detail.html"> <img src="img/demo/listing/thumbs/9.jpg" alt="">
@@ -269,14 +278,14 @@
                                         <h3>$1,650,690</h3> <small>13 Beverly Hills, CA 01210</small> </div>
                                 </a>
                             </div>
-                        </div> <a class="view-more" href="http://bootstrapsale.com/projects/roost/v1-1/grid-listings.html">
-                                View all properties for sale <i class="zmdi zmdi-long-arrow-right"></i>
+                        </div> <a class="view-more" href="#">Satış üçün olan bütün elanları gör<i class="zmdi zmdi-long-arrow-right"></i>
                             </a> </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card__header card__header--minimal">
-                            <h2>Təzə elanlar - İcarə</h2>  </div>
+                            <h2>Təzə elanlar - İcarə</h2>
+                        </div>
                         <div class="grid-widget grid-widget--listings">
                             <div class="col-xs-6">
                                 <a class="grid-widget__item" href="listing-detail.html"> <img src="img/demo/listing/thumbs/13.jpg" class="img-responsive" alt="">
@@ -302,14 +311,113 @@
                                         <h3>$2,543,000</h3> <small>132 04th St, San Francisco</small> </div>
                                 </a>
                             </div>
-                        </div> <a class="view-more" href="http://bootstrapsale.com/projects/roost/v1-1/grid-listings.html">
-                                View all properties for rent <i class="zmdi zmdi-long-arrow-right"></i>
+                        </div> <a class="view-more" href="#">İcarə üçün olan bütün elanları gör <i class="zmdi zmdi-long-arrow-right"></i>
                             </a> </div>
                 </div>
 
             </div>
         </div>
     </section>
+    <!--    aaaaaaaaaaaaaaaaa-->
+    <section class="lastUpdate">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="border-bottom: 1px solid #d7d7d7;">
+                        <h1 style="font-size: 43px;  color: #7a7a7a;">Son Əlavələr
+                            <div class="" style="font-size: 43px; float: right;"> <a href="#" style="color: #7a7a7a;">Satış<label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                            </label> İcarə</a>
+                            </div>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-no-padding">
+                <div class="col-md-12">
+                    <div class="lastAdding">
+                        <div class="col-sm-4 col-md-3">
+                            <div class="listings-grid__item">
+                                <a href="listing-detail.html">
+                                    <div class="listings-grid__main"> <img src="img/demo/listing/thumbs/1.jpg" alt="">
+                                        <div class="listings-grid__price">$2,542,000</div>
+                                    </div>
+                                    <div class="listings-grid__body"> <small>Ünvan: Bakı, Azərbaycan</small>
+                                        <h5>Elanın adı</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-3">
+                            <div class="listings-grid__item">
+                                <a href="listing-detail.html">
+                                    <div class="listings-grid__main"> <img src="img/demo/listing/thumbs/2.jpg" alt="">
+                                        <div class="listings-grid__price">$2,542,000</div>
+                                    </div>
+                                    <div class="listings-grid__body"> <small>Ünvan: Bakı, Azərbaycan</small>
+                                        <h5>Elanın adı</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-3">
+                            <div class="listings-grid__item">
+                                <a href="listing-detail.html">
+                                    <div class="listings-grid__main"> <img src="img/demo/listing/thumbs/3.jpg" alt="">
+                                        <div class="listings-grid__price">$2,542,000</div>
+                                    </div>
+                                    <div class="listings-grid__body"> <small>Ünvan: Bakı, Azərbaycan</small>
+                                        <h5>Elanın adı</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-3">
+                            <div class="listings-grid__item">
+                                <a href="listing-detail.html">
+                                    <div class="listings-grid__main"> <img src="img/demo/listing/thumbs/4.jpg" alt="">
+                                        <div class="listings-grid__price">$2,542,000</div>
+                                    </div>
+                                    <div class="listings-grid__body"> <small>Ünvan: Bakı, Azərbaycan</small>
+                                        <h5>Elanın adı</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    aaaaaaaaaaaaaaaaa-->
+
+
+    <!--    about uuuuuuuus-->
+
+    <section class="aboutUs" style="padding-bottom: 3%; padding-top: 2%;">
+        <div class="container">
+            <div class="row">
+                <h1>Haqqımızda</h1>
+                <hr class="headerHr">
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="logo_banner"> <img src="img/Layer-2.png" alt="" style="width: 100%">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="info_banner" style="min-height: 400px; overflow: hidden;">
+                        <h2 style="font-size: 22px;">Агентство недвижимости AREA является одной из ведущих риэлторских компаний в Азербайджане. Истоки компании уходят в далекие девяностые годы прошлого века. Тогда рынок недвижимости в Азербайджане только зарождался и первоначально развивался стихийн. Для того чтобы достигнуть успеха в подобных условиях его игрокам приходилось рассчитывать только на свою интуицию и деловую смекалку. Одной из таких компаний первопроходцев стоявших у истоков формирования института риэлторских услуг в Азербайджане было агентство по недвижимости GeoEko, хорошо известное в профессиональных кругах. Уверенно стоящая на ногах компания располагала самой крупной в столице клиентской базой и благодаря накопленному опыту с уверенностью сумела выстоять даже во времена небезызвестного дефолта 1998 года, когда многие организации канули в лету.</h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    about uuuuuuuus-->
+
+
     <section class="partners">
         <div class="header__recommended">
             <header class="section__title">
@@ -318,90 +426,51 @@
             <div class="listings-grid test">
                 <div class="listings-grid__item">
                     <a href="listing-detail.html">
-                        <div class="listings-grid__main"> <img src="img/demo/listing/thumbs/1.jpg" alt="">
+                        <div class="listings-grid__main"> <img src="img/demo/partners/1.png" alt="">
                         </div>
                     </a>
-                    <div class="actions listings-grid__favorite">
-                        <div class="actions__toggle">
-                            <input type="checkbox"> <i class="zmdi zmdi-favorite-outline"></i> <i class="zmdi zmdi-favorite"></i> </div>
-                    </div>
                 </div>
                 <div class="listings-grid__item">
                     <a href="listing-detail.html">
-                        <div class="listings-grid__main"> <img src="img/demo/listing/thumbs/2.jpg" alt="">
+                        <div class="listings-grid__main"> <img src="img/demo/partners/2.png" alt="">
                         </div>
-
-
                     </a>
-                    <div class="actions listings-grid__favorite">
-                        <div class="actions__toggle">
-                            <input type="checkbox"> <i class="zmdi zmdi-favorite-outline"></i> <i class="zmdi zmdi-favorite"></i> </div>
-                    </div>
                 </div>
                 <div class="listings-grid__item">
                     <a href="listing-detail.html">
-                        <div class="listings-grid__main"> <img src="img/demo/listing/thumbs/3.jpg" alt="">
+                        <div class="listings-grid__main"> <img src="img/demo/partners/3.png" alt="">
                         </div>
                     </a>
-                    <div class="actions listings-grid__favorite">
-                        <div class="actions__toggle">
-                            <input type="checkbox"> <i class="zmdi zmdi-favorite-outline"></i> <i class="zmdi zmdi-favorite"></i> </div>
-                    </div>
                 </div>
                 <div class="listings-grid__item">
                     <a href="listing-detail.html">
-                        <div class="listings-grid__main"> <img src="img/demo/listing/thumbs/4.jpg" alt="">
+                        <div class="listings-grid__main"> <img src="img/demo/partners/4.png" alt="">
                         </div>
                     </a>
-                    <div class="actions listings-grid__favorite">
-                        <div class="actions__toggle">
-                            <input type="checkbox"> <i class="zmdi zmdi-favorite-outline"></i> <i class="zmdi zmdi-favorite"></i> </div>
-                    </div>
                 </div>
                 <div class="listings-grid__item">
                     <a href="listing-detail.html">
-                        <div class="listings-grid__main"> <img src="img/demo/listing/thumbs/5.jpg" alt="">
+                        <div class="listings-grid__main"> <img src="img/demo/partners/5.png" alt="">
                         </div>
-
-
                     </a>
-                    <div class="actions listings-grid__favorite">
-                        <div class="actions__toggle">
-                            <input type="checkbox"> <i class="zmdi zmdi-favorite-outline"></i> <i class="zmdi zmdi-favorite"></i> </div>
-                    </div>
                 </div>
                 <div class="listings-grid__item">
                     <a href="listing-detail.html">
-                        <div class="listings-grid__main"> <img src="img/demo/listing/thumbs/6.jpg" alt="">
+                        <div class="listings-grid__main"> <img src="img/demo/partners/6.png" alt="">
                         </div>
                     </a>
-                    <div class="actions listings-grid__favorite">
-                        <div class="actions__toggle">
-                            <input type="checkbox"> <i class="zmdi zmdi-favorite-outline"></i> <i class="zmdi zmdi-favorite"></i> </div>
-                    </div>
                 </div>
                 <div class="listings-grid__item">
                     <a href="listing-detail.html">
-                        <div class="listings-grid__main"> <img src="img/demo/listing/thumbs/7.jpg" alt="">
+                        <div class="listings-grid__main"> <img src="img/demo/partners/7.png" alt="">
                         </div>
-
                     </a>
-                    <div class="actions listings-grid__favorite">
-                        <div class="actions__toggle">
-                            <input type="checkbox"> <i class="zmdi zmdi-favorite-outline"></i> <i class="zmdi zmdi-favorite"></i> </div>
-                    </div>
                 </div>
                 <div class="listings-grid__item">
                     <a href="listing-detail.html">
-                        <div class="listings-grid__main"> <img src="img/demo/listing/thumbs/8.jpg" alt="">
+                        <div class="listings-grid__main"> <img src="img/demo/partners/8.png" alt="">
                         </div>
-
-
                     </a>
-                    <div class="actions listings-grid__favorite">
-                        <div class="actions__toggle">
-                            <input type="checkbox"> <i class="zmdi zmdi-favorite-outline"></i> <i class="zmdi zmdi-favorite"></i> </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -411,12 +480,10 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="footer__block">
-                        <a class="logo clearfix" href="index.html"><img src="img/logo.png" alt=""></a> <address class="m-t-20 m-b-20 f-14">
-                                Nizami xx,
-                                Baki, Azerbaijan
-                            </address>
+                        <a class="logo clearfix" href="index.html"><img src="img/logo.png" alt=""></a>
+                        <address class="m-t-20 m-b-20 f-20">Nizami, Baki, Azerbaijan.</address>
                         <div class="f-20">+(012) 598 09 57</div>
-                        <div class="f-14 m-t-5">hello@55.com / info@55.com</div>
+                        <div class="f-20 m-t-5">something@area.az / info@area.az</div>
                         <div class="f-20 m-t-20"> <a href="index.html" class="m-r-10"><i class="zmdi zmdi-google"></i></a> <a href="index.html" class="m-r-10"><i class="zmdi zmdi-facebook"></i></a> <a href="index.html"><i class="zmdi zmdi-twitter"></i></a> </div>
                     </div>
                 </div>
